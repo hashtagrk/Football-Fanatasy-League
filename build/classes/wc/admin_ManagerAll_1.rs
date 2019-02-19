@@ -1,0 +1,9 @@
+wc.admin_ManagerAll$3
+wc.admin_ManagerAll$2
+wc.admin_ManagerAll$5
+wc.admin_ManagerAll$4
+wc.admin_ManagerAll$1
+wc.admin_ManagerAll$7
+wc.admin_ManagerAll$6
+wc.admin_ManagerAll
+wc.admin_ManagerAll$8
