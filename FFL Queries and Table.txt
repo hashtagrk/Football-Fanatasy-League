@@ -1,0 +1,354 @@
+create table manager(manager_id int, manager_name varchar(50), city varchar(20), country varchar(50));
+insert into manager values(1, 'Valverde', 'Barcelona', 'Spain');
+insert into manager values(2, 'Sampaoli', 'Aztec', 'Argentina');
+insert into manager values(3, 'Santos', 'Lisbon', 'Portugal');
+insert into manager values(4, 'Deschamps', 'Paris', 'France');
+insert into manager values(5, 'Wenger', 'London', 'UK');
+insert into manager values(6, 'Martinez', 'Brussels', 'Begium');
+insert into manager values(7, 'Jardim', 'Turin', 'Italy');
+insert into manager values(8, 'Klopp', 'Liverpool', 'UK');
+insert into manager values(9, 'Mourinho', 'Manchester', 'UK');
+insert into manager values(10, 'Sarri', 'London', 'UK');
+insert into manager values(11, 'Guardilo', 'Manchester', 'UK');
+insert into manager values(12, 'Heynckes', 'Berlin', 'Germany');
+insert into manager values(13, 'Tite', 'Rio', 'Brazil');
+insert into manager values(14, 'Low', 'Berlin', 'Germany');
+insert into manager values(15, 'Lopetegui', 'Madrid', 'Spain');
+insert into manager values(16, 'Pochettino', 'London', 'UK');
+insert into manager values(17, 'Umery', 'Paris', 'France');
+insert into manager values(18, 'Simeone', 'Madrid', 'Spain');
+insert into manager values(19, 'Solari', 'Madrid', 'Spain');
+insert into manager values(20, 'Conte', 'London', 'UK');
+insert into manager values(21, 'Zidane', 'Madrid', 'Spain');
+insert into manager values(22, 'Allegri', 'Turin', 'Italy');
+insert into manager values(23, 'Ancelotti', 'Rome', 'Italy');
+insert into manager values(24, 'Eddi How', 'Bournemouth', 'UK');
+insert into manager values(25, 'Lee Johnson', 'London', 'UK');
+insert into manager values(26, 'Parkinson', 'Bolton', 'UK');
+insert into manager values(27, 'Tony', 'Blackburn', 'USA');
+insert into manager values(28, 'Mark', 'Southampton', 'USA');
+insert into manager values(29, 'Tony Chaddha', 'Delhi', 'India');
+insert into manager values(30, 'Balbir Singh', 'Kolkata', 'India');
+...............................................................................
+
+create table players(player_id int, player_name varchar(50), rating number, cost number, position varchar(20));
+insert into players values(1, 'Cristiano Ronaldo', 94 , 1120, 'attacker');
+insert into players values(2, 'Lionel Messi', 93 , 1570, 'attacker');
+insert into players values(3, 'Neymar', 92 , 1280, 'attacker');
+insert into players values(4, 'Luca Modric', 91 , 800, 'midfielder');
+insert into players values(5, 'Kevin de Bruyne', 91 , 750, 'midfielder');
+insert into players values(6, 'Eden Hazard', 91 , 1320, 'attacker');
+insert into players values(7, 'Sergio Ramos', 91 , 920, 'defender');
+insert into players values(8, 'Luis Suarez', 94 , 1120, 'attacker');
+insert into players values(9, 'David de Gea', 91 , 820, 'goalkeeper');
+insert into players values(10, 'Toni Kroos', 90 , 1020, 'midfielder');
+insert into players values(11, 'Robert Lewandowski', 90 , 920, 'attacker');
+insert into players values(12, 'Manuel Neuer', 90 , 930, 'goalkeeper');
+insert into players values(13, 'Diego Godin', 90 , 830, 'defender');
+insert into players values(14, 'Thibaut Courtois', 90 , 940, 'goalkeeper');
+insert into players values(15, 'Jan Oblak', 90 , 820, 'goalkeeper');
+insert into players values(16, 'N'Golo Kante', 89 , 820, 'midfielder');
+insert into players values(17, 'Harry Kane', 89 , 900, 'attacker');
+insert into players values(18, 'Antione Griezmann', 89 , 810, 'attacker');
+insert into players values(19, 'Giorgio Chiellini', 89 , 720, 'defender');
+insert into players values(20, 'Sergio Aguero', 89 , 1000, 'attacker');
+insert into players values(21, 'Paulo Dybala', 89 , 720, 'midfielder');
+insert into players values(22, 'Edison Cavani', 89 , 920, 'Striker');
+insert into players values(23, 'Mats Hummels', 89 , 1000, 'defender');
+insert into players values(24, 'David Silva', 89 , 850, 'midfielder');
+insert into players values(25, 'Marc-Andre Ter Stegen', 89 , 750, 'goalkeeper');
+insert into players values(26, 'Isco', 89 , 850, 'midfielder');
+insert into players values(27, 'Mohamed Salah', 88 , 900, 'attacker');
+insert into players values(28, 'Marcelo', 88 , 1100, 'defender');
+insert into players values(29, 'Hugo Lloris', 88 , 600, 'goalkeeper');
+insert into players values(30, 'Coutinho', 88 , 1100, 'attacker');
+insert into players values(31, 'Gareth Bale', 88 , 1110, 'attacker');
+insert into players values(32, 'Sergio Busquets', 88 , 950, 'midfielder');
+insert into players values(33, 'Paul Pogba', 88 , 1100, 'midfielder');
+insert into players values(34, 'Christian Eriksen', 88 , 900, 'attacker');
+insert into players values(35, 'Gianluigi Buffon', 88 , 1000, 'Goal Keeper');
+insert into players values(36, 'James Rodriguez', 88 , 920, 'midfielder');
+insert into players values(37, 'Casemiro', 88 , 620, 'midfielder');
+insert into players values(38, 'Gonzalo Higuain', 88 , 620, 'attacker');
+insert into players values(39, 'Samir Handanovic', 88 , 750, 'goalkeeper');
+insert into players values(40, 'Lorenzo Insigne', 88 , 740, 'attacker');
+insert into players values(41, 'Thiago Silva', 88 , 750, 'defender');
+insert into players values(42, 'Kylian Mbappe', 87 , 950, 'attacker');
+insert into players values(43, 'Gerard Pique', 87 , 660, 'defender');
+insert into players values(44, 'Ivan Rakitic', 87 , 720, 'midfielder');
+insert into players values(45, 'Romelu Lukaku', 87 , 800, midfielder');
+insert into players values(47, 'Samuel Umtiti', 87 , 1120, 'defender');
+insert into players values(48, 'Jan Vertonghen', 87 , 860, 'defender');
+insert into players values(49, 'Jordi Alba', 87 , 670, 'defender');
+insert into players values(50, 'Andreas Iniesta', 87 , 750, 'midfielder');
+..................................................................................
+create table stadium(stadium_id int, stadium_name varchar(50), capacity number, country varchar(20));
+insert into stadium values(1, 'Bernabeu', 100000, 'Spain');
+insert into stadium values(2, 'Camp Nou', 99354, 'Spain');
+insert into stadium values(3, 'Allianz Arena', 98765, 'Germany');
+insert into stadium values(4, 'Old Trafford', 65432, 'UK');
+insert into stadium values(5, 'Stamford Bridge', 88762, 'Spain');
+insert into stadium values(6, 'Wembley', 90310, 'UK');
+insert into stadium values(7, 'Salt Lake Stadium',99998, 'India');
+insert into stadium values(8, 'Stade de France', 81338, 'France');
+insert into stadium values(9, 'AT&T Stadium', 80000, 'USA');
+insert into stadium values(10, 'Beijing National Stadium', 80000, 'China');
+insert into stadium values(11, 'Millenium Stadium', 74500, 'UK');
+insert into stadium values(12, 'FNB Stadium', 94736, 'RSA');
+insert into stadium values(13, 'Rose Bowl Stadium', 92542, 'USA');
+insert into stadium values(14, 'Estaido Azteca', 87000, 'Mexico');
+insert into stadium values(15, 'ANZ Stadium', 84000, 'Australia');
+insert into stadium values(16, 'Signal Iduna Park', 81360, 'Germany');
+insert into stadium values(17, 'Luzhniki Stadium', 81006, 'Russia');
+insert into stadium values(18, 'Shah Alam Stadium', 80372, 'Malaysia');
+insert into stadium values(19, 'Maracana Stadium', 78838, 'Brazil');
+insert into stadium values(20, 'Azadi Stadium', 78116, 'Iran');
+......................................................................................
+create table clubs(
+club_id int, 
+club_name varchar(30),
+country varchar(20),
+city varchar(30));
+
+insert into clubs values(1, 'FC Barcelona', 'Spain', 'Barcelona'); 
+insert into clubs values(2, 'Real Madrid C.F.', 'Spain', 'Madrid'); 
+insert into clubs values(3, 'FC Bayern Munich', 'Germany', 'Munich'); 
+insert into clubs values(4, 'Juventus F.C.', 'Italy', 'Turin'); 
+insert into clubs values(5, 'Paris Saint-Germain F.C.', 'France', 'Paris'); 
+insert into clubs values(6, 'Manchester United F.C.', 'England', 'Manchester'); 
+insert into clubs values(7, 'Manchester City F.C.', 'England', 'Manchester'); 
+insert into clubs values(8, 'Atlético Madrid', 'Spain', 'Madrid'); 
+insert into clubs values(9, 'Liverpool F.C.', 'England', 'Liverpool'); 
+insert into clubs values(10, 'Chelsea F.C.', 'England', 'London'); 
+insert into clubs values(11, 'Arsenal F.C.', 'England', 'London'); 
+insert into clubs values(12, 'Borussia Dortmund', 'Germany', 'Dortmund'); 
+insert into clubs values(13, 'Tottenham Hotspurs F.C.', 'England', 'London'); 
+insert into clubs values(14, 'A.C. Milan', 'Italy', 'Milan'); 
+insert into clubs values(15, 'A.S. Roma', 'Italy', 'Rome'); 
+insert into clubs values(16, 'S.S.C. Napoli', 'Italy', 'Naples'); 
+insert into clubs values(17, 'Inter Milan', 'Italy', 'Milan'); 
+insert into clubs values(18, 'Sevilla FC', 'Spain', 'Seville'); 
+insert into clubs values(19, 'AFC Ajax', 'Netherlands', 'Amsterdam'); 
+insert into clubs values(20, 'FC Porto', 'Portugal', 'Porto'); 
+insert into clubs values(21, 'Valencia CF', 'Spain', 'Valencia'); 
+insert into clubs values(22, 'Leicester City F.C.', 'England', 'Leicester'); 
+insert into clubs values(23, 'Everton F.C.', 'England', 'Liverpool'); 
+insert into clubs values(24, 'S.L. Benfica', 'Portugal', 'Lisbon'); 
+insert into clubs values(25, 'AS Monaco FC', 'France', 'Monaco'); 
+insert into clubs values(26, 'FC Schalke 04', 'Germany', 'Schalke'); 
+insert into clubs values(27, 'Bayer Leverkusen', 'Germany', 'Leverkusen'); 
+insert into clubs values(28, 'Olympique de Marseille', 'France', 'Marseille'); 
+insert into clubs values(29, 'Olympique Lyonnais', 'France', 'Lyon'); 
+insert into clubs values(30, 'S.S. Lazio', 'Italy', 'Rome'); 
+insert into clubs values(31, 'The Celtic Football Club', 'Scotland', 'Glasgow'); 
+insert into clubs values(32, 'VfL Wolfsburg', 'Germany', 'Wolfsburg'); 
+insert into clubs values(33, 'Galatasaray S.K.', 'Turkey', 'Istanbul'); 
+insert into clubs values(34, 'LA Galaxy', 'USA', 'Los Angeles'); 
+insert into clubs values(35, 'Athletic Bilbao', 'Spain', 'Bilbao'); 
+insert into clubs values(36, 'Boca Juniors', 'Argentina', 'Buenos Aires'); 
+insert into clubs values(37, 'FC Shakhtar Donetsk', 'Ukraine', 'Donetsk'); 
+insert into clubs values(38, 'Borussia Mönchengladbach', 'Germany', 'Mönchengladbach'); 
+insert into clubs values(39, 'PSV Eindhoven', 'Netherlands', 'Eindhoven'); 
+insert into clubs values(40, 'West Ham United F.C.', 'England', 'London'); 
+insert into clubs values(41, 'Newcastle United F.C.', 'England', 'Newcastle'); 
+insert into clubs values(42, 'Santos F.C.', 'Jamaica', 'Kingston'); 
+insert into clubs values(43, 'FC Zenit Saint Petersburg', 'Russia', 'Saint Petersburg'); 
+insert into clubs values(44, 'Sporting Clube de Portugal', 'Portugal', 'Lisbon'); 
+insert into clubs values(45, 'RB Leipzig', 'Germany', 'Leipzig'); 
+insert into clubs values(46, 'Southampton F.C.', 'England', 'Southampton'); 
+insert into clubs values(47, 'Swansea City A.F.C.', 'Wales', 'Swansea'); 
+insert into clubs values(48, 'Real Sociedad', 'Spain', 'San Sebastián'); 
+insert into clubs values(49, 'Feyenoord', 'Netherlands', 'Rotterdam'); 
+insert into clubs values(50, 'Wolverhampton Wanderers F.C.', 'England', 'Wolverhampton');
+.....................................................................................
+create table users(
+name varchar(20),
+pass varchar(20),
+role varchar(20));
+..........................................................................
+create table League(
+	club_id int,
+    club_name varchar(20),
+    p int default 0,
+    w int default 0,
+    d int default 0,
+    l int default 0,
+    points int default 0);
+...........................................................................
+create table user_club
+(
+usid int;
+cid int;
+);
+..............................................................................
+create table club_manager
+(
+club_id int;
+manager_id int;
+);
+................................................................................
+create table club_stadium
+(
+club_id int;
+stadium_id int;
+);
+................................................................................
+create table club_player
+(
+cid int;
+player_id int;
+);
+...............................................................................
+create table user_flag
+(
+usr int;
+flag int default 0;
+);
+..............................................................................
+alter table players
+add primary key (player_id);
+................................................
+alter table stadium
+add primary key (stadium_id);
+................................................
+alter table clubs
+add primary key (club_id);
+................................................
+alter table manager
+add primary key (manager_id);
+................................................
+alter table users
+add primary key (name);
+...............................................
+alter table user_club
+add foreign key(usid) references users(name);
+
+alter table user_club
+add foreign key(cid) references clubs(club_id);
+................................................
+alter table club_manager
+add foreign key(club_id) references clubs(club_id);
+
+alter table club_manager
+add foreign key(manager_id) references manager(manager_id);
+................................................
+alter table club_stadium
+add foreign key(club_id) references clubs(club_id);
+
+alter table club_stadium
+add foreign key(stadium_id) references stadium(stadium_id);
+.................................................
+alter table club_player
+add foreign key() references users(name);
+
+alter table club_player
+add foreign key(cid) references clubs(club_id);
+.................................................
+alter table user_flag
+add primary key(usr);
+
+alter table user_flag
+add foreign key(usr) references users(name);
+.................................................
+________________________________
+TRIGGERS Function and Cursors
+
+..........................................................................
+//Get the total rating from the club and its associated players
+...............................................................
+create or replace function get_total(clb_id in int)
+return int is
+cursor c is select rating from  players,Club_Player where 
+players.player_id=Club_Player.player_id and cid=clb_id;
+c1 c%rowtype;
+summ int:=0;
+begin
+open c;
+loop
+fetch c into c1;
+exit when c%notfound;
+summ:=summ+c1.rating;
+end loop;
+return summ;
+close c;
+end;
+/ 
+............................................................................
+To set the club as taken and you cant take them again.
+................................................
+create or replace trigger proj1
+after insert on User_club
+for each row
+begin
+update clubs set flag=0 where club_id=:new.cid;
+end;
+/
+.............................................................................................................
+To Find Top rated Players of the given club.
+.............................................................................
+create or replace procedure pro_proj(clb_id in int)
+is
+cursor c is
+select player_name,rating from players where players.player_id in 
+(select c.player_id from club_player c,players d where c.player_id=d.player_id and rating in( select max(rating) from players,club_player where club_player.cid=clb_id and players.player_id=club_player.player_id)); 
+player_rec c%rowtype;
+begin 
+open c;
+loop
+fetch c into player_rec;
+exit when c%notfound;
+insert into  player_find values(player_rec.player_name,player_rec.rating);
+end loop;
+close c;
+end;
+/
+.................................................................................................................
+______________________________________________________________________________________________
+NESTED QUERIES
+...........................................................................................................
+select club_id from League natural join clubs where points>= all(select points from League);
+...........................................................................................................
+select clb.club_name,s.stadium_name,m.manager_name from stadium  s,manager  m,clubs  clb where (s.stadium_id,m.manager_id,clb.club_id) in(
+select cs.stadium_id,c.manager_id,u.cid from user_club u, club_manager c,club_stadium cs 
+where u.cid=c.club_id and c.club_id=cs.club_id and cid in (select club_id from League natural join clubs where points>= all(select points from League)));
+............................................................................................................
+select * from players where position='defender' and player_id not in (select player_id from temp_player);
+__________________________________________________________________________________________________
+NORMALISATION REPORT
+.....................................................
+
+
+Table1  ==>  user_club(usid,cid)
+		
+		F={usid->cid}
+		Candidate key=usid and cid
+		In BCNF
+___________________________________________________
+Table2  ==> club_manager(club_id,manager_id)
+			
+		F={club_id->manager_id}
+		Candidate Key=club_id
+		In BCNF
+___________________________________________________
+Table3  ==> club_stadium(club_id,stadium_id)
+			
+		F={club_id->stadium_id}
+		Candidate Key=club_id
+		In BCNF
+__________________________________________________
+Table4  ==> club_player(club_id,player_id)
+		
+		Many to Many relation.
+		4NF 
+		Club multi-determines 
+		but only 2 atrributes.
+		No FD
+___________________________________________________
+Table5  ==> user_flag(usr,flag)
+			
+		F={usr->flag}
+		Candidate Key=usr
+		In BCNF	
+__________________________________________________________________X_______________________________________________________________________	
+
+

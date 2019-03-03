@@ -1,0 +1,28 @@
+NORMALISATION REPORT
+_________________________
+
+
+Table1  ==>  user_club(usid,cid)
+		
+		F={usid->cid}
+		Candidate key=usid and cid
+		In BCNF
+___________________________________________________
+Table2  ==> club_manager(club_id,manager_id)
+			
+		F={club_id->manager_id}
+		Candidate Key=club_id
+		In BCNF
+___________________________________________________
+Table3  ==> club_stadium(club_id,stadium_id)
+			
+		F={club_id->stadium_id}
+		Candidate Key=club_id
+		In BCNF
+__________________________________________________
+Table4  ==> club_player(club_id,player_id)
+		
+		Many to Many relation.
+		No Functional Dependency exists.
+___________________________________________________
+		
